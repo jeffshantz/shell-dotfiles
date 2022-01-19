@@ -1,0 +1,12 @@
+# If the path has 4 or fewer components, display the full path (%~)
+# Otherwise, display the first two and last components
+PROMPT="[%n@%m %(4~|%-2~/…/%1~|%~)]%# "
+
+# Loads theme from $HOME/.base16_theme
+BASE16_SHELL="$HOME/.config/base16-shell/"
+[ -n "$PS1" ] && \
+    [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
+        eval "$("$BASE16_SHELL/profile_helper.sh")"
+
+# Set theme
+base16_phd

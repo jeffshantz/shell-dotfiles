@@ -1,0 +1,3 @@
+setopt +o nomatch                       # Do not print error if no matches with rm -f
+zstyle ':completion:*' menu yes select  # Use a menu for completion
+
